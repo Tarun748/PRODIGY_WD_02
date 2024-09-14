@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stopwatch-container">
+    <div class="time-display">
+        <span id="time">00:00.00</span>
+        <span id="lap-time">00:00.00</span>
+    </div>
+    <div class="blue-circle"></div>
+</div>
+
+<div class="container">
+    <div class="lap-saved-container">
+        <div class="lap-times">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lap</th>
+                        <th>Lap Time</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="laps">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="saved-lap-container">
+        <div>Saved:</div>
+        <ul id="saved-laps" class="saved-lap-list">
+            <!-- Saved laps will go here -->
+        </ul>
+    </div>
+</div>
+
+<div class="controls">
+    <button id="start">Start</button>
+    <button id="lap">Lap</button>
+    <button id="reset">Reset</button>
+    <button id="save">Save</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
